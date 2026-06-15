@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sanjael Raja M - Full Stack Developer & AI Data Science Student. Portfolio showcasing projects, internships, services, and achievements." />
+  <meta name="keywords" content="Sanjael Raja, Full Stack Developer, AI Data Science, React.js, PHP, Python, SKCT, Portfolio, DevOps, SRE" />
+  <meta name="author" content="Sanjael Raja M" />
+  <meta property="og:title" content="Sanjael Raja M | Professional Portfolio" />
+  <meta property="og:description" content="B.Tech AI & Data Science student with full-stack development experience, SRE/DevOps experience, and AI projects." />
+  <meta name="theme-color" content="#00E5A8" />
+  <title>Sanjael Raja M | Full-Stack Developer &amp; AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo-container">
+        <svg class="logo-svg" width="54" height="54" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Double crescent outer sweeps -->
+          <path d="M 50 8 A 42 42 0 1 0 20 80" stroke="url(#preloader-logo-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+          <path d="M 50 92 A 42 42 0 1 0 80 20" stroke="url(#preloader-logo-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+          <!-- Inner Intertwined SR Monogram -->
+          <path d="M 44 34 C 33 28 23 34 25 45 C 27 56 43 52 43 62 C 43 70 33 72 25 66" stroke="url(#preloader-logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <path d="M 51 28 L 51 72" stroke="url(#preloader-logo-grad)" stroke-width="6" stroke-linecap="round" fill="none" />
+          <path d="M 51 28 H 65 C 73 28 73 48 65 48 H 51" stroke="url(#preloader-logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <path d="M 58 48 L 74 72" stroke="url(#preloader-logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <defs>
+            <linearGradient id="preloader-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE082" />
+              <stop offset="30%" stop-color="#FFB300" />
+              <stop offset="50%" stop-color="#FFE082" />
+              <stop offset="70%" stop-color="#B78103" />
+              <stop offset="100%" stop-color="#785800" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">SANJAEL RAJA M<span class="logo-accent">.</span></span>
+      </div>
+      <div class="preloader-status">Initializing Developer Environment...</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM MAGNETIC CURSOR -->
+  <div class="custom-cursor" id="custom-cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo magnetic">
+        <svg class="logo-svg" width="38" height="38" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Double crescent outer sweeps -->
+          <path d="M 50 8 A 42 42 0 1 0 20 80" stroke="url(#logo-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+          <path d="M 50 92 A 42 42 0 1 0 80 20" stroke="url(#logo-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+          <!-- Inner Intertwined SR Monogram -->
+          <path d="M 44 34 C 33 28 23 34 25 45 C 27 56 43 52 43 62 C 43 70 33 72 25 66" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <path d="M 51 28 L 51 72" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round" fill="none" />
+          <path d="M 51 28 H 65 C 73 28 73 48 65 48 H 51" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <path d="M 58 48 L 74 72" stroke="url(#logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <defs>
+            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE082" />
+              <stop offset="30%" stop-color="#FFB300" />
+              <stop offset="50%" stop-color="#FFE082" />
+              <stop offset="70%" stop-color="#B78103" />
+              <stop offset="100%" stop-color="#785800" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">SANJAEL<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active magnetic">Home</a></li>
+        <li><a href="#about" class="nav-link magnetic">About</a></li>
+        <li><a href="#skills" class="nav-link magnetic">Skills</a></li>
+        <li><a href="#services" class="nav-link magnetic">Services</a></li>
+        <li><a href="#internships" class="nav-link magnetic">Experience</a></li>
+        <li><a href="#projects" class="nav-link magnetic">Projects</a></li>
+        <li><a href="#achievements" class="nav-link magnetic">Achievements</a></li>
+        <li><a href="#contact" class="nav-link magnetic">Contact</a></li>
+      </ul>
+      <button class="hamburger magnetic" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Ready to Innovate &amp; Deploy
+      </div>
+      <h1 class="hero-name">
+        SANJAEL<br /><span class="hero-name-accent">RAJA M</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-static">I am a </span>
+        <span class="role-dynamic" id="role-dynamic">Full-Stack Developer</span>
+      </div>
+      <p class="hero-desc">
+        Building intelligent web architectures, scalable DevOps pipelines, and AI-driven solutions.<br />
+        B.Tech Artificial Intelligence &amp; Data Science @ SKCT
+      </p>
+      
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary magnetic" id="hero-projects-btn">
+          <span>Explore Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline magnetic" id="hero-contact-btn">
+          <span>Let's Talk</span>
+        </a>
+        <a href="Sanjael Resume Final.pdf" download class="btn btn-glass magnetic" id="hero-resume-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>SCROLL TO DISCOVER</span>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About Me</span>
+        <h2 class="section-title">Engaging Tech, Creating Solutions</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col">
+          <div class="about-portrait-card spotlight-card">
+            <div class="portrait-image-wrapper">
+              <img src="profile.jpg" alt="Sanjael Raja M" class="portrait-img" />
+              <div class="portrait-tech-overlay">
+                <span class="tech-corner top-left"></span>
+                <span class="tech-corner top-right"></span>
+                <span class="tech-corner bottom-left"></span>
+                <span class="tech-corner bottom-right"></span>
+              </div>
+            </div>
+            <div class="portrait-info">
+              <span class="portrait-tag">B.TECH AI &amp; DS</span>
+              <h4 class="portrait-title">Sanjael Raja M</h4>
+              <p class="portrait-subtitle">SKCT Resident Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-lead">
+            Detail-oriented <strong>Full-Stack Developer</strong> and <strong>AI &amp; Data Science Student</strong> based in Coimbatore, TN.
+          </h3>
+          <p class="about-body">
+            I specialize in crafting high-performance, responsive web applications and clean backend architectures. With a strong academic foundation in Artificial Intelligence and three specialized internships, I bridge the gap between intelligent predictive models and stable full-stack deployments.
+          </p>
+          
+          <div class="about-career-goal">
+            <h4>🎯 Career Goal</h4>
+            <p>To leverage modern frameworks, automation pipelines, and cognitive computing to build enterprise-grade software that is reliable, scalable, and intuitive.</p>
+          </div>
+
+          <div class="about-hobbies">
+            <h4>🏐 Hobbies &amp; Interests</h4>
+            <div class="hobby-tags">
+              <span class="hobby-tag">⚡ Handball</span>
+              <span class="hobby-tag">🏐 Volleyball</span>
+              <span class="hobby-tag">🏏 Cricket</span>
+              <span class="hobby-tag">💻 DevOps Exploration</span>
+              <span class="hobby-tag">🤖 Deep Learning</span>
+              <span class="hobby-tag">🔧 Embedded Systems</span>
+            </div>
+          </div>
+
+          <div class="about-info-grid">
+            <div class="info-card spotlight-card">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-label">CGPA</span>
+                <span class="info-value">7.23 / 10.0</span>
+              </div>
+            </div>
+            <div class="info-card spotlight-card">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Coimbatore, Tamil Nadu</span>
+              </div>
+            </div>
+            <div class="info-card spotlight-card">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">sanjealraja@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-card spotlight-card">
+              <span class="info-icon">📱</span>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-value">+91 6369614976</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- STATISTICS SECTION -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card spotlight-card magnetic">
+          <div class="stat-card-inner">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Internships Completed</span>
+          </div>
+        </div>
+        <div class="stat-card spotlight-card magnetic">
+          <div class="stat-card-inner">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Projects Deployed</span>
+          </div>
+        </div>
+        <div class="stat-card spotlight-card magnetic">
+          <div class="stat-card-inner">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Technical Awards</span>
+          </div>
+        </div>
+        <div class="stat-card spotlight-card magnetic">
+          <div class="stat-card-inner">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Technologies Mastered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Technical Skills</span>
+        <h2 class="section-title">Core Competencies</h2>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Progress Bars -->
+        <div class="skills-bars-container">
+          <h3 class="sub-section-title">Skill Proficiency</h3>
+          
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>HTML5 / CSS3 (Responsive Design)</span>
+              <span class="progress-val">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 0%" data-percentage="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>PHP / Laravel Framework</span>
+              <span class="progress-val">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 0%" data-percentage="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>MySQL / PostgreSQL / MongoDB</span>
+              <span class="progress-val">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 0%" data-percentage="85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>JavaScript (ES6+) / React.js</span>
+              <span class="progress-val">80%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 0%" data-percentage="80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>Java / Python / C++</span>
+              <span class="progress-val">75%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 0%" data-percentage="75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-progress-wrapper">
+            <div class="skill-progress-info">
+              <span>DevOps / SRE (CI-CD, Observability)</span>
+              <span class="progress-val">60%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 0%" data-percentage="60%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack Icons -->
+        <div class="tech-stack-container">
+          <h3 class="sub-section-title">Development Environment</h3>
+          <div class="tech-icons-grid">
+            <div class="tech-icon-card spotlight-card" title="HTML5">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm15.6 6H6.9l.4 4.3h8.2l-.4 4.5-3.1 1-3.1-1-.2-2.1H7.6l.4 4.3 4 1.3 4-1.3.8-8.9.2-2.3z"/></svg>
+              </div>
+              <span>HTML5</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="CSS3">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm14.7 6.4H7.2l.2 2.5h8.6l-.3 3.5-3.7 1.2-3.7-1.2-.2-2.6H6.8l.4 5.3 4.8 1.6 4.8-1.6 1.1-12.2z"/></svg>
+              </div>
+              <span>CSS3</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="JavaScript">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.268c-.153-.889-.955-1.577-2.14-1.817l-.872-.191c-.814-.171-.99-.36-.99-.684 0-.315.314-.522.784-.522.486 0 .802.198 1.018.595l1.693-1.053c-.568-.999-1.549-1.576-2.73-1.576-1.963 0-3.323 1.152-3.323 2.899 0 1.774 1.252 2.458 2.665 2.782l.873.2c.765.172.936.423.936.702 0 .37-.396.595-.972.595-.756 0-1.189-.351-1.396-.864l-1.747 1.018c.54 1.099 1.639 1.666 3.124 1.666 2.124 0 3.637-1.099 3.637-3.178v-.075zm-8.472-3.056c0-.9-.63-1.531-1.548-1.531s-1.548.63-1.548 1.531v4.717c0 .9.63 1.53 1.548 1.53s1.548-.63 1.548-1.53V15.21z"/></svg>
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="React.js">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.6a14.7 14.7 0 0 0-4.6-5.8c-1.3-.9-2.8-1.4-4.4-1.4-2.8 0-5.4 1.4-7.2 3.8a14.7 14.7 0 0 0-4.6 5.8c-1.3.9-2.8 1.4-4.4 1.4-2.8 0-5.4-1.4-7.2-3.8zm-12 1.4c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4 1.4.6 1.4 1.4-.6 1.4-1.4 1.4z"/></svg>
+              </div>
+              <span>ReactJS</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="PHP">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.2 14.6c-.6 1.1-1.6 1.9-3 2.3-1.4.4-3.1.5-5.1.5H6v-9.4h3.6c1.9 0 3.3.1 4.3.4s1.8.8 2.3 1.4c.5.6.8 1.3.8 2.2 0 .9-.3 1.8-1 2.6z"/></svg>
+              </div>
+              <span>PHP</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="Laravel">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.046 2.146L12.012 7.95 2.022 2.13 1.008 2.716l9.98 5.798v11.602l10.024-5.83v-11.6L22.046 2.146z"/></svg>
+              </div>
+              <span>Laravel</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="MySQL">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.1 16.6h-2.2l-.6-1.9H9.7l-.6 1.9H6.9l3.5-9.4h2.2l3.5 9.4z"/></svg>
+              </div>
+              <span>MySQL</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="MongoDB">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-.6 0-1.1.2-1.5.7C9.3 2.1 8 4.7 8 7.3c0 3 1.8 5.5 4 6.7 2.2-1.2 4-3.7 4-6.7 0-2.6-1.3-5.2-2.5-6.6-.4-.5-.9-.7-1.5-.7z"/></svg>
+              </div>
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="Git">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.384 11.272L12.736.623a1.446 1.446 0 0 0-2.042 0L8.62 2.697l2.946 2.946a2.032 2.032 0 0 1 2.875 0 2.037 2.037 0 0 1 0 2.877 2.032 2.032 0 0 1-2.875 0l-2.92-2.92v5.776a2.038 2.038 0 0 1 1.096 1.802 2.033 2.033 0 0 1-2.032 2.033 2.034 2.034 0 0 1-2.033-2.033c0-.847.518-1.572 1.25-1.874V8.528A2.038 2.038 0 0 1 6.84 6.726a2.033 2.033 0 0 1 2.032-2.033c.27 0 .524.053.76.15L7.545 2.756.616 9.685a1.445 1.445 0 0 0 0 2.043l10.649 10.649a1.446 1.446 0 0 0 2.042 0l10.077-10.077a1.445 1.445 0 0 0 0-2.028z"/></svg>
+              </div>
+              <span>Git</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="GitHub">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </div>
+              <span>GitHub</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="Docker">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.983 11.078h2.119c.102 0 .186-.083.186-.185V8.99c0-.102-.084-.186-.186-.186h-2.119c-.103 0-.186.084-.186.186v1.903c0 .102.083.185.186.185zM11.261 11.078h2.119c.102 0 .185-.083.185-.185V8.99c0-.102-.083-.186-.185-.186h-2.119c-.102 0-.185.084-.185.186v1.903c0 .102.083.185.185.185zM8.584 11.078h2.119c.102 0 .185-.083.185-.185V8.99c0-.102-.083-.186-.185-.186H8.584c-.101 0-.185.084-.185.186v1.903c0 .102.084.185.185.185zM5.902 11.078h2.119c.102 0 .185-.083.185-.185V8.99c0-.102-.083-.186-.185-.186H5.902c-.101 0-.185.084-.185.186v1.903c0 .102.084.185.185.185zM5.902 8.32h2.119c.102 0 .185-.083.185-.185V6.233c0-.101-.083-.185-.185-.185H5.902c-.101 0-.185.084-.185.185v1.902c0 .102.084.185.185.185zM8.584 8.32h2.119c.102 0 .185-.083.185-.185V6.233c0-.101-.083-.185-.185-.185H8.584c-.101 0-.185.084-.185.185v1.902c0 .102.084.185.185.185zM11.261 8.32h2.119c.102 0 .185-.083.185-.185V6.233c0-.101-.083-.185-.185-.185h-2.119c-.102 0-.185.084-.185.185v1.902c0 .102.083.185.185.185zM13.983 5.562h2.119c.102 0 .186-.083.186-.185V3.474c0-.102-.084-.186-.186-.186h-2.119c-.103 0-.186.084-.186.186v1.903c0 .102.083.185.186.185zM13.983 8.32h2.119c.102 0 .186-.083.186-.185V6.233c0-.101-.084-.185-.186-.185h-2.119c-.103 0-.186.084-.186.185v1.902c0 .102.083.185.186.185zM15 13.011a8.47 8.47 0 0 1-1.393-.11c-.551-.083-.772-.442-.8-.92-.027-.428.166-.827.525-1.077.387-.27.87-.27 1.257-.028.32.2.484.553.484.973 0 .428-.152.787-.525.96-.138.064-.32.102-.45.102h.902zm-12.8 2.012c-.083-.497.027-.994.303-1.395.277-.4.69-.69 1.187-.8l.497-.083c.387-.055.69-.304.83-.663.138-.359.11-.772-.083-1.104l-.248-.442a2.38 2.38 0 0 0-.69-.745 2.5 2.5 0 0 0-1-.387l-.442-.083c-.497-.083-.994.027-1.395.303a2.53 2.53 0 0 0-.8 1.187l-.083.497c-.055.387-.304.69-.663.83-.359.138-.772.11-1.104-.083l-.442-.248A2.38 2.38 0 0 0 1 12a2.5 2.5 0 0 0-.387-1l-.083-.442c-.083-.497.027-.994.303-1.395.277-.4.69-.69 1.187-.8l.497-.083c.387-.055.69-.304.83-.663.138-.359.11-.772-.083-1.104l-.248-.442a2.38 2.38 0 0 0-.69-.745 2.5 2.5 0 0 0-1-.387l-.442-.083c-.497-.083-.994.027-1.395.303a2.53 2.53 0 0 0-.8 1.187l-.083.497c-.055.387-.304.69-.663.83-.359.138-.772.11-1.104-.083l-.442-.248A2.38 2.38 0 0 0 1 12c.083.497-.027.994-.303 1.395-.277.4-.69.69-1.187.8l-.497.083c-.387.055-.69.304-.83.663-.138.359-.11.772.083 1.104l.248.442c.2.33.475.603.8.8l.442.248c.497.083.994-.027 1.395-.303.4-.277.69-.69.8-1.187l.083-.497c.055-.387.304-.69.663-.83.359-.138.772-.11 1.104.083l.442.248c.33.2.603.475.8.8l.248.442zm19.986-7.859c-.524 1.16-.91 2.375-1.16 3.618-.4 1.97-.248 3.968.442 5.842.138.373.303.746.497 1.105.152.277.428.442.745.442a.85.85 0 0 0 .8-.553c.124-.317.22-.649.276-.98.262-1.574.193-3.176-.207-4.73-.207-.802-.497-1.589-.87-2.348-.138-.276-.303-.539-.47-.8a.85.85 0 0 0-.744-.442.84.84 0 0 0-.309.047z"/></svg>
+              </div>
+              <span>Docker</span>
+            </div>
+            <div class="tech-icon-card spotlight-card" title="Linux">
+              <div class="tech-icon-img">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .007c-.16 0-.32.007-.48.02a9.6 9.6 0 0 0-8.24 9.6 9.6 9.6 0 0 0 9.6 9.6 9.6 9.6 0 0 0 9.6-9.6A9.6 9.6 0 0 0 12 .007zm-1.8 14.88c-.6 0-1.08-.48-1.08-1.08s.48-1.08 1.08-1.08 1.08.48 1.08 1.08-.48 1.08-1.08 1.08zm3.6 0c-.6 0-1.08-.48-1.08-1.08s.48-1.08 1.08-1.08 1.08.48 1.08 1.08-.48 1.08-1.08 1.08z"/></svg>
+              </div>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADDITIONAL SKILLS (SOFT SKILLS & LANGUAGES) -->
+      <div class="skills-additional-grid">
+        <!-- Soft Skills -->
+        <div class="additional-skills-card spotlight-card">
+          <h3 class="sub-section-title">Soft Skills</h3>
+          <div class="soft-skills-container">
+            <span class="soft-skill-tag">🗣️ Communication</span>
+            <span class="soft-skill-tag">🧩 Problem Solving</span>
+            <span class="soft-skill-tag">⏱️ Time Management</span>
+            <span class="soft-skill-tag">🧠 Critical Thinking</span>
+            <span class="soft-skill-tag">🔄 Adaptability</span>
+            <span class="soft-skill-tag">👥 Leadership</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="additional-skills-card spotlight-card">
+          <h3 class="sub-section-title">Languages</h3>
+          <div class="languages-list">
+            <div class="language-item">
+              <div class="lang-info">
+                <span class="lang-name">Tamil</span>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-indicator-bar">
+                <div class="lang-indicator-fill" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="language-item">
+              <div class="lang-info">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Professional Working Proficiency</span>
+              </div>
+              <div class="lang-indicator-bar">
+                <div class="lang-indicator-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="language-item">
+              <div class="lang-info">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level">Reading Proficiency (Completed DBHPS Examinations up to Praveen Poorvardh)</span>
+              </div>
+              <div class="lang-indicator-bar">
+                <div class="lang-indicator-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Services</span>
+        <h2 class="section-title">What I Offer</h2>
+        <p class="section-subtitle">Delivering high-quality solutions targeted for enterprise requirements</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card spotlight-card">
+          <div class="service-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>End-to-end full-stack architectures built using PHP (Laravel) and React.js. Integration of robust security standards, database normalization, and cross-browser responsiveness.</p>
+          <div class="service-meta">Dynamic SPAs · E-Commerce · Custom APIs</div>
+        </div>
+
+        <div class="service-card spotlight-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI &amp; Data Solutions</h3>
+          <p>Training neural network models (CNNs, ML pipelines), processing dataset structures, NLP classification, and embedding AI services directly into web products via lightweight micro-frameworks like Flask.</p>
+          <div class="service-meta">TensorFlow · OpenCV · Clinical Diagnostics</div>
+        </div>
+
+        <div class="service-card spotlight-card">
+          <div class="service-icon">📱</div>
+          <h3>Mobile App Development</h3>
+          <p>Creating performant cross-platform mobile solutions using React Native. Smooth navigation schemes, offline data persistence, and secure token authentication models.</p>
+          <div class="service-meta">React Native · iOS &amp; Android · REST Sync</div>
+        </div>
+
+        <div class="service-card spotlight-card">
+          <div class="service-icon">⚙️</div>
+          <h3>DevOps &amp; SRE</h3>
+          <p>Monitoring operational health, implementing GitHub Actions workflow automation, administering Docker local builds, observing MTTR reduction, and documentation runbooks.</p>
+          <div class="service-meta">CI/CD · System Observability · Linux Env</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIPS / EXPERIENCE -->
+  <section class="internships section" id="internships">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Internships &amp; Experience</span>
+        <h2 class="section-title">Internships &amp; Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- 2026 -->
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content spotlight-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Site Reliability Engineer Intern (DevOps)</h3>
+                <span class="timeline-company">Sparkcurv Technologies Pvt. Ltd.</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2026 – June 2026</span>
+                <span class="timeline-location">📍 Nagercoil, Tamilnadu</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Assisted in monitoring production application uptime using observability systems, managing alerts and escalating infrastructure incidents.</li>
+              <li>Engineered automation within CI/CD pipelines to support fast release schedules, learning industry SRE metrics.</li>
+              <li>Documented incident response guidelines and system runbooks, significantly lowering the MTTR (Mean Time to Resolution).</li>
+              <li>Optimized staging configuration files through performance profiling alongside development teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2025 (Appin) -->
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content spotlight-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full Stack Developer Intern</h3>
+                <span class="timeline-company">Appin Technology</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">June 2025</span>
+                <span class="timeline-location">📍 Coimbatore, Tamilnadu</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Contributed web modules utilizing server-side PHP logic paired with dynamic JavaScript frontend interfaces.</li>
+              <li>Integrated internal REST APIs, implementing asynchronous state updates via fetch requests, eliminating full page reloads.</li>
+              <li>Executed comprehensive API test plans inside Postman and Thunder Client to check response schemas.</li>
+              <li>Maintained unified team repositories on GitHub, handling pull reviews and merge conflicts.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2025 (Sivasethu) -->
+        <div class="timeline-item">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content spotlight-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full Stack Developer Intern</h3>
+                <span class="timeline-company">Sivasethu Info Tech</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2025 – June 2025</span>
+                <span class="timeline-location">📍 Trichy, Tamilnadu</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Designed and shipped a dynamic E-Commerce Platform from scratch using raw PHP and highly optimized relational MySQL.</li>
+              <li>Crafted user authorization portals involving safe session management, token storage, and secure bcrypt password hashing.</li>
+              <li>Programmed clean administrative dashboards containing tools for real-time inventory adjustments and order analytics tracking.</li>
+              <li>Resolved over 15+ complex runtime exceptions via rigorous debugger tracing during active agile sprints.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Projects</span>
+        <h2 class="section-title">Selected Works</h2>
+      </div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI / ML Systems</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Applications</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card spotlight-card" data-category="ai">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="proj-badge">Computer Vision</span>
+            <div class="proj-actions">
+              <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="proj-link magnetic" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Brain Tumor Detection System</h3>
+          <p class="project-desc">A deep-learning application leveraging CNNs (Convolutional Neural Networks) built with TensorFlow/Keras to analyze MRI images, identifying tumor structures with precision. Implemented a Flask backend web portal for image uploads.</p>
+          <div class="project-tags">
+            <span>TensorFlow</span>
+            <span>CNN</span>
+            <span>Flask</span>
+            <span>OpenCV</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card spotlight-card" data-category="ai">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="proj-badge">NLP / Speech</span>
+            <div class="proj-actions">
+              <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="proj-link magnetic" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">MediScribe AI (Healthcare Assistant)</h3>
+          <p class="project-desc">An interactive AI system which converts doctor-patient dialogue into formatted medical briefs using advanced Speech Recognition. Utilizes Natural Language Processing pipelines to summarize symptoms and flag potential drug allergies.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>NLP</span>
+            <span>React.js</span>
+            <span>PostgreSQL</span>
+            <span>WebSockets</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card spotlight-card" data-category="fullstack">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="proj-badge">E-Commerce</span>
+            <div class="proj-actions">
+              <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="proj-link magnetic" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Web Portal</h3>
+          <p class="project-desc">A feature-complete online catalog offering cart calculations, dynamic pricing updates, administrative dashboard panels, order routing, and a clean database design optimizing user checkout speeds.</p>
+          <div class="project-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>HTML5/CSS3</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card spotlight-card" data-category="mobile">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="proj-badge">Emergency Net</span>
+            <div class="proj-actions">
+              <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="proj-link magnetic" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Blood Donation Application</h3>
+          <p class="project-desc">Connecting blood donors with medical recipients instantly. Features a geolocation-enabled dashboard tracking blood requests, matched profiles, and automated donor notification rules.</p>
+          <div class="project-tags">
+            <span>React Native</span>
+            <span>React.js</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card spotlight-card" data-category="fullstack">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="proj-badge">Health Tracker</span>
+            <div class="proj-actions">
+              <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="proj-link magnetic" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Fitness Goal Tracker</h3>
+          <p class="project-desc">React-powered application to log workouts, track calorie consumption metrics, chart weight goals over time, and output statistics charts using visual graphing components.</p>
+          <div class="project-tags">
+            <span>React.js</span>
+            <span>CSS3</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card spotlight-card" data-category="fullstack">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <span class="proj-badge">Analytics</span>
+            <div class="proj-actions">
+              <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="proj-link magnetic" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Feedback Management System</h3>
+          <p class="project-desc">A secure administrative hub resolving incoming multi-user submissions. Integrates rigorous XSS protection filters, SQL injection guards, and generates tabular chart reports representing submission volumes.</p>
+          <div class="project-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS & EDUCATION SECTION -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Achievements</span>
+        <h2 class="section-title">Recognitions &amp; Credentials</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <!-- Winner -->
+        <div class="achievement-card gold spotlight-card">
+          <div class="achievement-glow"></div>
+          <div class="achievement-rank">🥇</div>
+          <div class="achievement-content">
+            <h3>Stack Storm — Winner</h3>
+            <p class="achievement-event">SRM University Technical Fest</p>
+            <p class="achievement-desc">Secured first position out of numerous competing development teams in a rigorous hackathon. Built and presented a operational full-stack application under tight time limits.</p>
+          </div>
+          <div class="achievement-label">Winner</div>
+        </div>
+
+        <!-- Runner-up -->
+        <div class="achievement-card silver spotlight-card">
+          <div class="achievement-glow"></div>
+          <div class="achievement-rank">🥈</div>
+          <div class="achievement-content">
+            <h3>Query Quest — Runner Up</h3>
+            <p class="achievement-event">SRM University Technical Fest</p>
+            <p class="achievement-desc">Awarded second place in a challenging database modeling and SQL query optimization marathon testing advanced schemas and query processing.</p>
+          </div>
+          <div class="achievement-label">2nd Place</div>
+        </div>
+
+        <!-- Representative -->
+        <div class="achievement-card blue spotlight-card">
+          <div class="achievement-glow"></div>
+          <div class="achievement-rank">🎓</div>
+          <div class="achievement-content">
+            <h3>Inter-College Representative</h3>
+            <p class="achievement-event">Selected by SKCT</p>
+            <p class="achievement-desc">Chosen to represent Sri Krishna College of Technology in technical events and symposia hosted across SRM University networks.</p>
+          </div>
+          <div class="achievement-label">SKCT Delegate</div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certifications-section">
+        <h3 class="section-subheading">Professional Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card spotlight-card">
+            <span class="cert-icon">📜</span>
+            <div class="cert-info">
+              <h4>Full-Stack Developer Internship</h4>
+              <p class="cert-issuer">Sivasethu Info Tech · 2025</p>
+            </div>
+          </div>
+          <div class="cert-card spotlight-card">
+            <span class="cert-icon">📜</span>
+            <div class="cert-info">
+              <h4>Full-Stack Developer Internship</h4>
+              <p class="cert-issuer">Appin Technology · 2025</p>
+            </div>
+          </div>
+          <div class="cert-card spotlight-card">
+            <span class="cert-icon">⚡</span>
+            <div class="cert-info">
+              <h4>Learnathon Certification</h4>
+              <p class="cert-issuer">SKCT Academic Campaign</p>
+            </div>
+          </div>
+          <div class="cert-card spotlight-card">
+            <span class="cert-icon">📜</span>
+            <div class="cert-info">
+              <h4>Dakshin Bharat Hindi Prachar Sabha (DBHPS)</h4>
+              <p class="cert-issuer">Successfully completed Hindi examinations up to Praveen Poorvardh level.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="education-section">
+        <h3 class="section-subheading">Education Journey</h3>
+        <div class="edu-grid">
+          <div class="edu-card spotlight-card">
+            <span class="edu-icon">🎓</span>
+            <div class="edu-content">
+              <h4>B.Tech in Artificial Intelligence &amp; Data Science</h4>
+              <p class="edu-school">Sri Krishna College of Technology, Coimbatore</p>
+              <div class="edu-meta">
+                <span>2023 - Present</span>
+                <span class="edu-metric highlight">CGPA: 7.23</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card spotlight-card">
+            <span class="edu-icon">📚</span>
+            <div class="edu-content">
+              <h4>Higher Secondary Certificate (HSC)</h4>
+              <p class="edu-school">Tamil Nadu State Board</p>
+              <div class="edu-meta">
+                <span>2022 - 2023</span>
+                <span class="edu-metric">76.6%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card spotlight-card">
+            <span class="edu-icon">🏫</span>
+            <div class="edu-content">
+              <h4>Secondary School Leaving Certificate (SSLC)</h4>
+              <p class="edu-school">Tamil Nadu State Board</p>
+              <div class="edu-meta">
+                <span>2020 - 2021</span>
+                <span class="edu-metric highlight">100%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="contact-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 / Contact</span>
+        <h2 class="section-title">Connect With Me</h2>
+        <p class="section-subtitle">Looking for an enthusiastic full-stack developer or DevOps candidate? Write to me below!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <p class="contact-desc-text">I am regularly available for interviews, technical discussions, and projects. Drop a line using the direct form or connect via GitHub and LinkedIn.</p>
+          
+          <div class="contact-channel-list">
+            <a href="mailto:sanjealraja@gmail.com" class="channel-card spotlight-card magnetic">
+              <span class="channel-icon">📧</span>
+              <div class="channel-detail">
+                <span class="channel-title">Email</span>
+                <span class="channel-value">sanjealraja@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="tel:+916369614976" class="channel-card spotlight-card magnetic">
+              <span class="channel-icon">📞</span>
+              <div class="channel-detail">
+                <span class="channel-title">Phone</span>
+                <span class="channel-value">+91 6369614976</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/sanjael-raja" target="_blank" rel="noopener noreferrer" class="channel-card spotlight-card magnetic">
+              <span class="channel-icon">🔗</span>
+              <div class="channel-detail">
+                <span class="channel-title">LinkedIn</span>
+                <span class="channel-value">linkedin.com/in/sanjael-raja</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/sanjael" target="_blank" rel="noopener noreferrer" class="channel-card spotlight-card magnetic">
+              <span class="channel-icon">🐙</span>
+              <div class="channel-detail">
+                <span class="channel-title">GitHub</span>
+                <span class="channel-value">github.com/sanjael</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-panel spotlight-card">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Project Discussion" required />
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Let's build something awesome..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic" style="width: 100%; justify-content: center;">
+              <span>Transmit Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-layout">
+        <div class="footer-brand">
+          <svg class="logo-svg" width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Double crescent outer sweeps -->
+            <path d="M 50 8 A 42 42 0 1 0 20 80" stroke="url(#footer-logo-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+            <path d="M 50 92 A 42 42 0 1 0 80 20" stroke="url(#footer-logo-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+            <!-- Inner Intertwined SR Monogram -->
+            <path d="M 44 34 C 33 28 23 34 25 45 C 27 56 43 52 43 62 C 43 70 33 72 25 66" stroke="url(#footer-logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 51 28 L 51 72" stroke="url(#footer-logo-grad)" stroke-width="6" stroke-linecap="round" fill="none" />
+            <path d="M 51 28 H 65 C 73 28 73 48 65 48 H 51" stroke="url(#footer-logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 58 48 L 74 72" stroke="url(#footer-logo-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <defs>
+              <linearGradient id="footer-logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFE082" />
+                <stop offset="30%" stop-color="#FFB300" />
+                <stop offset="50%" stop-color="#FFE082" />
+                <stop offset="70%" stop-color="#B78103" />
+                <stop offset="100%" stop-color="#785800" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">SANJAEL<span class="logo-accent">.</span></span>
+        </div>
+        <p class="footer-text">Built using modern HTML5 &amp; vanilla CSS3. Custom interaction engines initialized.</p>
+        <p class="footer-copyright">© 2026 Sanjael Raja M. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top magnetic" id="back-to-top" aria-label="Back to Top">
+    <svg class="progress-circle" viewBox="0 0 100 100">
+      <circle class="progress-circle-bg" cx="50" cy="50" r="45"></circle>
+      <circle class="progress-circle-fill" id="scroll-circle" cx="50" cy="50" r="45"></circle>
+    </svg>
+    <span class="arrow-up">↑</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
